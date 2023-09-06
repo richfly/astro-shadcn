@@ -1,6 +1,7 @@
 ---
 import '../styles/globals.css'
 import { Button } from '../components/ui/button'
+import ThemeIcon from '../components/ThemeIcon.astro';
 ---
 
 <!doctype html>
@@ -14,8 +15,13 @@ import { Button } from '../components/ui/button'
 
 	</head>
 	<body>
-		<div class="grid place-items-center h-screen">Astro x ShadCN
-			<Button size="lg" variant="outline">Click Me</Button>
+		<div class="grid grid-flow-col mt-4">
+			
+			<h1 class="col-span-4 ml-4">Astro x ShadCN</h1>
+			<Button>Sign Up</Button>
+			<Button size="lg" variant="outline">Login</Button>
+			<ThemeIcon />
 		</div>
+		<div class="m-8">Seperate?</div>
 	</body>
 </html>
