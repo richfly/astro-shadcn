@@ -11,6 +11,7 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from "../components/ui/navigation-menu"
+import { Separator } from '../components/ui/separator.tsx'
 
 
 import '../styles/globals.css'
@@ -34,7 +35,9 @@ const { title } = Astro.props;
 		<div class="grid grid-flow-col mt-4">
 			<h1 class="col-span-12 ml-4">Astro x ShadCN</h1>
 			<a href="/" class="m-1">Home</a>
+			<Separator orientation="vertical" />
 			<a href="/about" class="m-1">About</a>
+			<Separator  orientation="vertical" />
 			<a href="/pricing" class="m-1 mr-8">Pricing</a>
 			<Button><p class="text-white">Sign up</p></Button>
 			<Button size="lg" variant="outline">Login</Button>
