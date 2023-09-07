@@ -1,10 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Button  from '../components/Button.astro'
+
+const newLink = "/about"
 ---
 
 
 <Layout title="home"  transition:persist>
 	<div class="m-8">Hi I'm Rich, why houston cry👋</div>
-	<Button title="Click me" />
+	<Button title="Click me" link={newLink} />
 </Layout>
