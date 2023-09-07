@@ -30,7 +30,7 @@ const { title } = Astro.props;
 			<Navigation />
 			<Button><p class="text-white">Sign up</p></Button>
 			<Button size="lg" variant="outline">Login</Button>
-			<ThemeIcon class="place-self-end" transition:persist/>
+			<ThemeIcon class="place-self-end" client:load transition:persist/>
 		</div>
 		<slot />
 	</body>
