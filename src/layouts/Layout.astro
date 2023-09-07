@@ -2,7 +2,6 @@
 import ThemeIcon from '../components/ThemeIcon.astro';
 import Navigation from '../components/Navigation.astro'
 import { Button } from '../components/ui/button';
-import { Separator } from '../components/ui/separator.tsx'
 import { ViewTransitions } from "astro:transitions"
 
 
@@ -30,7 +29,7 @@ const { title } = Astro.props;
 			<Navigation />
 			<Button><p class="text-white">Sign up</p></Button>
 			<Button size="lg" variant="outline">Login</Button>
-			<ThemeIcon class="place-self-end" client:load transition:persist/>
+			<ThemeIcon class="place-self-end" transition:persist/>
 		</div>
 		<slot />
 	</body>
